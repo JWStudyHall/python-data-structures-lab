@@ -24,7 +24,7 @@ def combine_foods():
 
 print('Exercise 2:', combine_foods())
 
-Ex 3.
+# Ex 3.
 def slice_foods():
     foods = ("salad", "pot-pie", "pizza", "tacos", "sushi", "stew")
     slice_two= foods[-2:]
@@ -36,22 +36,27 @@ print('Exercise 3:', slice_foods())
 # Ex. 4
 def hometown_info():
     home_town = {
-    "city": "Buffalo",
-    "state": "NY",
-    "population": 258703
-}
-    home_town_items=[]
-    
-    for key, town in home_town.items():
-        home_town_items.append(f"{key}={value}")
+        "city": "Buffalo",
+        "state": "NY",
+        "population": 278000
+    }
 
-    return home_town_items
+    return f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}"
 
 print('Exercise 4:', hometown_info())
 
 
 # Ex 5
 def list_home_town_items():
-  
+     home_town = {
+        "city": "Buffalo",
+        "state": "NY",
+        "population": 278000
+    }
+     home_town_items=[]
+     for key, value in home_town.items():
+        home_town_items.append(f"{key} = {value}")
+
+     return home_town_items
 
 print('Exercise 5:', list_home_town_items())
